@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <button class="btn">Đăng nhập</button>
+    <div class="modal-container">
+      <div class="overlay"></div>
+      <div class="modal">
+        <div class="modal-header">
+          <div class="tab login">Đăng Nhập</div>
+          <div class="tab register non-active">Đăng Ký</div>
+        </div>
+
+        <div class="modal-content">
+          <div class="modal-login">
+            <form action="" class="login-form form">
+              <div class="login-content">
+                <p class="login-content-text">với các tài khoản mạng xã hội</p>
+              </div>
+
+              <div class="modal-content-social">
+                <button class="login-google social-icon">
+                  <img
+                    src="https://cdnweb.dantri.com.vn/dist/7d0beed56ca1d379fbc0.svg"
+                    alt="google"
+                  />
+                  Google
+                </button>
+                <button class="login-facebook social-icon">
+                  <img
+                    src="https://cdnweb.dantri.com.vn/dist/f5ae7e06d5a6fc5ebaff.svg"
+                    alt="facebook"
+                  />
+                  Facebook
+                </button>
+              </div>
+
+              <span>hoặc</span>
+              <div class="login-email">
+                <p class="login-email-text">Email</p>
+                <input type="email" class="input-email" placeholder="Email" />
+                <p class="login-hidden-email hidden">Vui lòng nhập thông tin</p>
+              </div>
+
+              <div class="login-password">
+                <p class="login-password-text">Mật khẩu</p>
+                <input
+                  type="text"
+                  class="input-password"
+                  placeholder="Mật khẩu"
+                />
+                <p class="login-hidden-password hidden">
+                  Vui lòng nhập thông tin
+                </p>
+              </div>
+
+              <a href="#" class="forgot-password">Quên mật khẩu?</a>
+              <br />
+
+              <button class="btn-login">Đăng nhập</button>
+            </form>
+          </div>
+          <div class="modal-register">
+            <form action="" class="register-form form non-active">
+              <div class="register-content">
+                <p class="register-content-text">
+                  Hoàn thành đăng ký, và bắt đầu trải nghiệm ngay!
+                </p>
+              </div>
+              <div class="register-name">
+                <p class="register-name-text">Họ và tên</p>
+                <input
+                  type="text"
+                  class="register-input-name"
+                  placeholder="Họ và tên"
+                />
+              </div>
+
+              <div class="register-email">
+                <p class="register-email-text">Email</p>
+                <input
+                  type="text"
+                  class="register-input-email"
+                  placeholder="Email"
+                />
+              </div>
+
+              <div class="register-password">
+                <p class="register-password-text">Mật khẩu</p>
+                <input
+                  type="text"
+                  class="register-input-password"
+                  placeholder="Mật khẩu"
+                />
+              </div>
+
+              <div class="register-note">
+                <p>
+                  Bằng cách đăng ký tài khoản, bạn cũng đồng thời chấp nhận mọi
+                  <a href="#" class="register-note-link">
+                    điều kiện về qui định và chính sách của Dân trí
+                  </a>
+                </p>
+              </div>
+
+              <button class="register-btn">Đăng ký</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
