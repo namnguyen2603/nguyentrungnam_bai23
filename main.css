@@ -64,6 +64,7 @@ a {
 .modal-header .tab.non-active {
     background: #ddd;
     color: #9c9c9c;
+
 }
 
 .modal-content .login-content {
@@ -125,6 +126,21 @@ a {
     font-size: 14px;
 }
 
+.modal-content .modal-register .register-name-hidden,
+.modal-content .modal-register .register-email-hidden,
+.modal-content .modal-register .register-password-hidden {
+    display: none;
+}
+
+.modal-content .modal-register .register-name-hidden.hidden,
+.modal-content .modal-register .register-email-hidden.hidden,
+.modal-content .modal-register .register-password-hidden.hidden {
+    display: block;
+    font-style: italic;
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
 
 .modal-content .login-form .forgot-password {
     display: block;
@@ -160,7 +176,7 @@ a {
 .modal-register .form input {
     width: 100%;
     padding: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     margin-top: 10px;
 
 }
@@ -169,10 +185,12 @@ a {
     line-height: 20px;
     margin-bottom: 20px;
     font-size: 14px;
+
 }
 
 .modal-register .form .register-note-link {
     color: #2361ff;
+
 }
 
 .modal-register .form .register-btn {
@@ -184,4 +202,5 @@ a {
     border-radius: 5px;
     font-weight: 600;
     margin-bottom: 30px;
+    margin-top: 10px;
 }

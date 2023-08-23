@@ -47,8 +47,55 @@ inputEmail.addEventListener("focus", function () {
 
 inputPassword.addEventListener("blur", function () {
   if (inputPassword.value.trim() === "") {
-    inputPassword.classList.remove("hidden");
+    errorPassword.classList.remove("hidden");
   } else {
     errorPassword.classList.add("hidden");
   }
+});
+inputPassword.addEventListener("focus", function () {
+  errorPassword.classList.add("hidden");
+});
+
+// inputPassword.addEventListener("click", function () {
+//   errorPassword.classList.remove("hidden");
+// });
+
+var registerName = document.querySelector(".register-input-name");
+var registerEmail = document.querySelector(".register-input-email");
+var registerPassword = document.querySelector(".register-input-password");
+var errorNameRegister = document.querySelector(".register-name-hidden");
+var errorEmailRegister = document.querySelector(".register-email-hidden");
+var errorPasswordRegister = document.querySelector(".register-password-hidden");
+
+registerName.addEventListener("blur", function () {
+  if (registerName.value.trim() === "") {
+    errorNameRegister.classList.add("hidden");
+  } else {
+    errorNameRegister.classList.remove("hidden");
+  }
+});
+registerName.addEventListener("focus", function () {
+  errorNameRegister.classList.remove("hidden");
+});
+
+registerEmail.addEventListener("blur", function () {
+  if (registerEmail.value.trim() === "") {
+    errorEmailRegister.classList.add("hidden");
+  } else {
+    errorEmailRegister.classList.remove("hidden");
+  }
+});
+registerEmail.addEventListener("focus", function () {
+  errorEmailRegister.classList.remove("hidden");
+});
+
+registerPassword.addEventListener("blur", function () {
+  if (registerPassword.value.trim() === "") {
+    errorPasswordRegister.classList.add("hidden");
+  } else {
+    errorPasswordRegister.classList.remove("hidden");
+  }
+});
+registerPassword.addEventListener("focus", function () {
+  errorPasswordRegister.classList.remove("hidden");
 });
